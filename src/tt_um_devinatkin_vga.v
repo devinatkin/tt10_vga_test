@@ -28,7 +28,7 @@ module tt_um_devinatkin_vga(
 
 
   // Suppress unused signals warning
-  wire _unused_ok = &{ena, ui_in};
+  wire _unused_ok = &{ui_in};
 
   reg [9:0] counter;
 
