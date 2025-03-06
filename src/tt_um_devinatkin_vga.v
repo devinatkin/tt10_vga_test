@@ -41,7 +41,7 @@ module tt_um_devinatkin_vga(
   wire [9:0] moving_x = pix_x + counter;
 
   assign R = video_active ? {moving_x[ui_in[3:0]], pix_y[2]} : 2'b00;
-  assign G = video_active ? {moving_x[6], pix_y[ui_in[7:4]]} : 2'b00;
+  assign G = video_active ? {moving_x[6], pix_y[ui_in[2]]} : 2'b00;
   assign B = video_active ? {moving_x[7], pix_y[5]} : 2'b00;
   
   always @(posedge vsync) begin
