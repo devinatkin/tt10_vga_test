@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "PWM Loop"      # Project title
+  title:        "VGA Test"      # Project title
   author:       "Devin Atkin"      # Your name
   discord:      "devinatkin"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Looping Led PWM based on previous Lab"      # One line description of what your project does
+  description:  "Just Some VGA"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -11,17 +11,14 @@ project:
   tiles: "micro"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_devinatkin_pwm"
+  top_module:  "tt_um_devinatkin_vga"
 
   # List your project's source files here.
   # Source files must be in ./src and you must list each source file separately, one per line.
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
-    - "tt_um_devinatkin_pwm.v"
-    - "shift_register.v"
-    - "pwm_module.v"
-    - "pulse_on_change.v"
-
+    - "tt_um_devinatkin_vga.v"
+    - "hvsync_generator.v"
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs

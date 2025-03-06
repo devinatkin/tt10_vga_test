@@ -5,7 +5,7 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = tt_um_devinatkin_pwm.v pwm_module.v shift_register.v pulse_on_change.v
+PROJECT_SOURCES = tt_um_devinatkin_vga.v
 
 ifneq ($(GATES),yes)
 
